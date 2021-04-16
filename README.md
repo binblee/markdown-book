@@ -2,7 +2,7 @@
 
 A markdown book template with:
 - Eisvogel latex template
-- pandoc docker image [based on pandoc ubuntu-latex](https://hub.docker.com/r/pandoc/ubuntu-latex)
+- pandoc docker image based on [pandoc ubuntu-latex](https://hub.docker.com/r/pandoc/ubuntu-latex)
   - addition latex packages required for using Eisvogel latex template
   - Simlified Chinese font (Noto CJK)
 - background pdf in [backgrounds](backgrounds) from Eisvogel sample
