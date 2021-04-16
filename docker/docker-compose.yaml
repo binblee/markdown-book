@@ -1,0 +1,4 @@
+services:
+  pandoc-app:
+    build: .
+    image: "binblee/pandoc:2.13"
