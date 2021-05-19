@@ -2,7 +2,7 @@ SOURCE=chapters
 BUILD=build
 BOOK=book
 pdf:
-	docker run -it -v $(PWD):/work -w /work binblee/pandoc:2.13 \
+	docker run -it --rm -v $(PWD):/work -w /work binblee/pandoc:2.13 \
 		--filter pandoc-crossref \
 		--pdf-engine=xelatex \
 		--template=./templates/eisvogel-2.0.0.latex \
