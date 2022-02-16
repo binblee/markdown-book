@@ -4,7 +4,7 @@ subtitle: 学习编程
 author: 张三
 subject: "python"
 keywords: [python,programming]
-lang: en
+# lang: en
 lof: false
 lof-own-page: true
 toc-own-page: true
