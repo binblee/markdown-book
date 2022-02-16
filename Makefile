@@ -5,7 +5,7 @@ pdf:
 	docker run -it --rm -v $(PWD):/work -w /work binblee/pandoc:2.16.2 \
 		--filter pandoc-crossref \
 		--pdf-engine=xelatex \
-		--template=./templates/eisvogel-2.0.0.latex \
+		--template=eisvogel-2.0.0.latex \
 		--highlight-style tango \
 		--toc \
 		--number-sections \
