@@ -62,3 +62,5 @@ StefanoCecere markdown book template - [https://github.com/StefanoCecere/markdow
 
 [https://github.com/dalibo/pandocker](https://github.com/dalibo/pandocker)
 
+[Scientific Writing with Markdown](https://jaantollander.com/post/scientific-writing-with-markdown/
+) by [jaantollander](https://github.com/jaantollander)
