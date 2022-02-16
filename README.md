@@ -1,5 +1,6 @@
 # Markdown Book Template
 
+## Overview
 A markdown book template with:
 - Eisvogel latex template
 - pandoc docker image based on [pandoc ubuntu-latex](https://hub.docker.com/r/pandoc/ubuntu-latex)
@@ -7,6 +8,10 @@ A markdown book template with:
   - Simlified Chinese font (Noto CJK)
 - background pdf in [backgrounds](backgrounds) from Eisvogel sample
 - Sample contents copied from python document Simplified Chinese [https://docs.python.org/zh-cn/3/tutorial/index.html](https://docs.python.org/zh-cn/3/tutorial/index.html)
+
+## Updates
+
+- (Feb 16, 2022) Pandoc 2.16.2, with Eisvogel template build into image, so you don't have to copy the template file any more.
 
 ## How to use
 
@@ -23,7 +28,7 @@ Generated book is in [build](build) directory.
 
 
 
-If you do not want to use Chinese font, please remove this line from [Makefile](Makefile) :
+Please remove below from [Makefile](Makefile) if you do not want to use Chinese font.
 
 ```Makefile
 		-V CJKmainfont="Noto Serif CJK SC" \
@@ -54,4 +59,6 @@ Pandoc at docker hub: [https://hub.docker.com/u/pandoc](https://hub.docker.com/u
 Eisvogel - [https://github.com/Wandmalfarbe/pandoc-latex-template](https://github.com/Wandmalfarbe/pandoc-latex-template)
 
 StefanoCecere markdown book template - [https://github.com/StefanoCecere/markdown_pandoc_book_template](https://github.com/StefanoCecere/markdown_pandoc_book_template)
+
+[https://github.com/dalibo/pandocker](https://github.com/dalibo/pandocker)
 
