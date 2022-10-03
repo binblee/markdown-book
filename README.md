@@ -3,14 +3,14 @@
 ## Overview
 A markdown book template with:
 - Eisvogel latex template
-- pandoc docker image based on [pandoc ubuntu-latex](https://hub.docker.com/r/pandoc/ubuntu-latex)
+- pandoc docker image based on [pandoc latex](https://hub.docker.com/r/pandoc/latex)
   - addition latex packages required for using Eisvogel latex template
   - Simlified Chinese font (Noto CJK)
 - background pdf in [backgrounds](backgrounds) from Eisvogel sample
 - Sample contents copied from python document Simplified Chinese [https://docs.python.org/zh-cn/3/tutorial/index.html](https://docs.python.org/zh-cn/3/tutorial/index.html)
 
 ## Updates
-
+- (Oct 3, 2020)  Pandoc image 2.19.2.0-ubuntu, math can be displayed in epub
 - (Feb 16, 2022) Pandoc 2.16.2, with Eisvogel template build into image, so you don't have to copy the template file any more.
 
 ## How to use
@@ -34,9 +34,15 @@ Please remove below from [Makefile](Makefile) if you do not want to use Chinese 
 		-V CJKmainfont="Noto Serif CJK SC" \
 ```
 
+Run command to generate a epub file:
+```bash
+make epub
+```
+
+Or you can run ```make all``` to create both files.
 
 
-You have to install pandoc and texlive if you prefer command line. Please do not foget to update [Makefile](Makefile) as well. 
+*Note:* You have to install pandoc and texlive manually if you prefer command line. Replace docker command with pandoc in [Makefile](Makefile). 
 
 
 
