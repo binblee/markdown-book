@@ -1,6 +1,6 @@
-FROM pandoc/ubuntu-latex:2.16.2
+FROM pandoc/latex:2.19.2.0-ubuntu
 RUN apt-get update && apt-get install fonts-noto-cjk
-RUN tlmgr update --self && tlmgr install ctex footnotebackref mdframed zref needspace sourcesanspro sourcecodepro titling pagecolor fvextra
+RUN tlmgr update --self && tlmgr install ctex footnotebackref mdframed zref needspace sourcesanspro sourcecodepro titling pagecolor fvextra koma-script lineno
 # Templates are installed in '/.pandoc'.
 ARG TEMPLATES_DIR=/.pandoc/templates
 
