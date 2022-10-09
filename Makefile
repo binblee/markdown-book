@@ -1,8 +1,9 @@
 SOURCE=chapters
 BUILD=build
 BOOK=book
+TAG=2.19.2.0-latex-2.0.0-eisgovel
 pdf:
-	docker run -it --rm -v $(PWD):/work -w /work binblee/pandoc:2.19.2.0-latex-2.0.0-eisgovel \
+	docker run -it --rm -v $(PWD):/work -w /work binblee/pandoc:$(TAG) \
 		--filter pandoc-crossref \
 		--pdf-engine=xelatex \
 		--template=eisvogel-2.0.0.latex \
@@ -15,7 +16,7 @@ pdf:
 		$(SOURCE)/meta.md $(SOURCE)/01/*.md $(SOURCE)/02/*.md
 
 epub:
-	docker run -it -v $(PWD):/work -w /work binblee/pandoc:2.19.2.0-latex-2.0.0-eisgovel \
+	docker run -it -v $(PWD):/work -w /work binblee/pandoc:$(TAG) \
 		--filter pandoc-crossref \
 		--toc \
 		--number-sections \
