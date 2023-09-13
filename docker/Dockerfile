@@ -1,6 +1,6 @@
-FROM pandoc/latex:2.19.2.0-ubuntu
+FROM pandoc/latex:3.1.1.0-ubuntu
 RUN tlmgr update --self \
-    && tlmgr install ctex footnotebackref mdframed zref needspace sourcesanspro sourcecodepro titling pagecolor fvextra koma-script lineno \
+    && tlmgr install ctex footnotebackref mdframed zref needspace sourcesanspro sourcecodepro titling pagecolor fvextra koma-script lineno hardwrap catchfile\
     && rm -rf /opt/texlive/texdir/tlpkg/backups
 
 RUN apt-get update \
@@ -13,4 +13,4 @@ ARG TEMPLATES_DIR=/.pandoc/templates
 RUN mkdir -p ${TEMPLATES_DIR} && \
     # Links for the root user
     ln -s /.pandoc /root/.pandoc
-COPY eisvogel-2.0.0.latex ${TEMPLATES_DIR}/eisvogel-2.0.0.latex
+COPY eisvogel-2.4.1.latex ${TEMPLATES_DIR}/eisvogel-2.4.1.latex

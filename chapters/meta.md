@@ -16,6 +16,6 @@ titlepage-rule-color: "00737C"
 colorlinks: true
 figPrefix: 图
 figureTitle: 图
-footer-left: "."
-footer-right:
+# footer-left:
+# footer-right:
 ---

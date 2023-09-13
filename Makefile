@@ -1,12 +1,12 @@
 SOURCE=chapters
 BUILD=build
 BOOK=book
-TAG=2.19.2.0-latex-2.0.0-eisgovel
+TAG=3.1.1.0-latex-2.4.1-eisgovel
 pdf:
 	docker run -it --rm -v $(PWD):/work -w /work binblee/pandoc:$(TAG) \
 		--filter pandoc-crossref \
 		--pdf-engine=xelatex \
-		--template=eisvogel-2.0.0.latex \
+		--template=eisvogel-2.4.1.latex \
 		--highlight-style tango \
 		--toc \
 		--number-sections \
